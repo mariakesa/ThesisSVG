@@ -61,13 +61,49 @@ document.addEventListener("DOMContentLoaded", function () {
       .attr("fill", "pink")
       .attr("transform", "translate(25, 100)");
 
+    //Start coordinate system
+    svg.append("line")
+        .attr("x1", 25)
+        .attr("y1", 100)
+        .attr("x2", 25)
+        .attr("y2", 50)
+        .attr("stroke", "gray")
+
+    svg.append("line")
+        .attr("x1", 25)
+        .attr("y1", 100)
+        .attr("x2", 0)
+        .attr("y2", 125)
+        .attr("stroke", "gray")
+
+    svg.append("line")
+        .attr("x1", 25)
+        .attr("y1", 100)
+        .attr("x2", 0)
+        .attr("y2", 90)
+        .attr("stroke", "gray")
+
+    svg.append("line")
+        .attr("x1", 25)
+        .attr("y1", 100)
+        .attr("x2", 50)
+        .attr("y2", 125)
+        .attr("stroke", "gray")
+
+    svg.append("line")
+        .attr("x1", 25)
+        .attr("y1", 100)
+        .attr("x2", 50)
+        .attr("y2", 100)
+        .attr("stroke", "gray")
+
     svg.append("text")
         .attr("font-size", 10)
         .attr("x", 120)
         .attr("y", 80)
         .attr("dx", 20)
         .attr("dy", -10)
-        .text("Neuron");
+        .text("Neuron ts");
 
     svg.append("text")
         .attr("font-size", 10)
@@ -75,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .attr("y", 50)
         .attr("dx", 20)
         .attr("dy", -10)
-        .text("Transformer feature");
+        .text("Transformer feature ts");
 
     
 });
