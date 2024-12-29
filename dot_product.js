@@ -61,5 +61,21 @@ document.addEventListener("DOMContentLoaded", function () {
       .attr("fill", "red")
       .attr("transform", "translate(25, 100)");
 
+    svg.append("text")
+        .attr("font-size", 10)
+        .attr("x", 120)
+        .attr("y", 80)
+        .attr("dx", 20)
+        .attr("dy", -10)
+        .text("Neuron");
+
+    svg.append("text")
+        .attr("font-size", 10)
+        .attr("x", 40)
+        .attr("y", 50)
+        .attr("dx", 20)
+        .attr("dy", -10)
+        .text("Transformer feature");
+
     
 });
