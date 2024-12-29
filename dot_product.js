@@ -51,14 +51,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const angleArc = arcGenerator({
         innerRadius: 0,
-        outerRadius: 10,
+        outerRadius: 20,
         startAngle: angle1,
         endAngle: angle2
     });
 
     svg.append("path")
       .attr("d", angleArc)
-      .attr("fill", "red")
+      .attr("fill", "pink")
       .attr("transform", "translate(25, 100)");
 
     svg.append("text")
